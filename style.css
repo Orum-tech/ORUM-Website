@@ -264,7 +264,7 @@ ul {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  background-color: #ffffff;
+  background-color: #acbdd3;
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -281,11 +281,11 @@ ul {
 
 .founder-info h3 {
   font-size: 1.25rem;
-  color: #212529;
+  color: #0a0a0a;
 }
 
 .founder-info p {
-  color: #495057;
+  color: #060707;
   font-size: 0.95rem;
 }
 
@@ -664,11 +664,11 @@ ul {
 
 /* --- Footer --- */
 .footer {
-  margin-top: 4rem;
+  margin-top: 3rem;
   padding: 2.5rem 1rem;
   text-align: center;
-  background-color: #ffffff;
-  border-top: 1px solid #e9ecef;
+  background-color: #170b86;
+  border-top: 1px solid #180f2b;
 }
 
 .footer-logo {
@@ -682,20 +682,20 @@ ul {
 .logo-img-footer {
   width: 2rem; /* 32px */
   height: 2rem;
-  border-radius: 50%;
+  border-radius: 60%;
 }
 
 .footer-logo-text {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #212529;
+  color: #f6f8fa;
 }
 
 .footer-quote {
   display: block;
   max-width: 500px;
   margin: 0 auto 1rem;
-  color: #495057;
+  color: #f0f2f5;
   font-style: italic;
   font-size: 0.9rem;
 }
@@ -703,7 +703,7 @@ ul {
 .copyright {
   margin-top: 1rem;
   font-size: 0.85rem;
-  color: #6c757d;
+  color: #f8f9fa;
 }
 
 /* --- Animations --- */
