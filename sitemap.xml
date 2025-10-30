@@ -4,7 +4,7 @@
    <!-- Home Page (Sabse Zaroori Page) -->
    <url>
       <loc>https://parakk-erp.site/</loc> 
-      <lastmod>2025-10-29</lastmod>
+      <lastmod>2025-10-30</lastmod>
       <changefreq>daily</changefreq>
       <priority>1.0</priority>
    </url>
@@ -12,7 +12,7 @@
    <!-- About Section -->
    <url>
       <loc>https://parakk-erp.site/#about</loc> 
-      <lastmod>2025-10-29</lastmod>
+      <lastmod>2025-10-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
@@ -20,7 +20,7 @@
    <!-- ERP Section -->
    <url>
       <loc>https://parakk-erp.site/#erp</loc> 
-      <lastmod>2025-10-29</lastmod>
+      <lastmod>2025-10-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
@@ -28,7 +28,7 @@
    <!-- USP Section -->
    <url>
       <loc>https://parakk-erp.site/#usp</loc> 
-      <lastmod>2025-10-29</lastmod>
+      <lastmod>2025-10-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
@@ -36,7 +36,7 @@
    <!-- Features Section -->
    <url>
       <loc>https://parakk-erp.site/#features</loc> 
-      <lastmod>2025-10-29</lastmod>
+      <lastmod>2025-10-30</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.7</priority>
    </url>
@@ -44,7 +44,7 @@
    <!-- Contact Section -->
    <url>
       <loc>https://parakk-erp.site/#contact</loc> 
-      <lastmod>2025-10-29</lastmod>
+      <lastmod>2025-10-30</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
    </url>
