@@ -1,334 +1,753 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="canonical" href="https://parakk-erp.site" />
-  <title>Parakk-ERP — Professional School ERP & Learning Visibility Platform</title>
-  <meta name="description" content="Parakk-ERP: The complete School ERP & Learning Visibility Platform." />
+  <title>Parakk-ERP — ERP & Learning Visibility Platform</title>
+  <meta name="description" content="India's first hybrid School ERP + Learning Visibility Platform, bridging the gap between school operations and real student effort." />
+
+  <!-- Fonts: Poppins (Headings) & Inter (Body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  
-  <!-- Google Site Verification -->
-  <meta name="google-site-verification" content="ACGBTWwymV7IPe05eFHqQTyrgMcuEF0HYYsQFx4f01I" />
-  
-  <!-- Stylesheet -->
+  <meta name="google-site-verification" content="ACGBTWwymV7IPe05eFHqQTyrgMcuEF@HYYsQFx4fe11" />
+
+  <!-- Feather Icons (for decoration) -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- New Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  
+  <!-- NAV (unikk-e style, no box) -->
+  <header class="nav-container" role="banner">
+    <div class="container nav-inner">
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="nav-container">
-      <!-- Logo -->
-      <a href="#" class="nav-logo" data-page="home">
-        <img src="parakk.png" 
-             alt="Parakk-ERP Logo" 
-             class="logo-img"
-             onerror="this.src='https://placehold.co/40x40/0f172a/ffffff?text=P'">
-        <span class="logo-text">Parakk-ERP</span>
+        <a class="brand" href="#" data-page="home" aria-label="Parakk home">
+        <!-- YAHAN APNA LOGO DAALEIN (Pehle se hai) -->
+        <img src="parakk.png" alt="Parakk-ERP Logo" class="brand-logo-img"> 
+        <span class="brand-text">Parakk-ERP</span>
       </a>
-      
-      <!-- Desktop Nav -->
-      <nav id="navLinks" class="nav-menu">
-        <a href="#home" class="nav-link active" data-page="home">Home</a>
-        <a href="#features" class="nav-link" data-page="home-features">Features</a>
-        <a href="#pricing" class="nav-link" data-page="pricing">Pricing</a>
-        <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+
+
+      <!-- Nav Links (Center) -->
+      <nav class="nav-links" role="navigation" aria-label="Main Navigation">
+        <!-- data-page attribute for navigation logic -->
+        <a class="nav-link active" data-page="home" href="#">Home</a>
+        <a class="nav-link" data-page="erp" href="#">ERP Modules</a>
+        <a class="nav-link" data-page="visibility" href="#">Visibility</a>
+        <a class="nav-link" data-page="features" href="#">Features</a>
+        <a class="nav-link" data-page="about" href="#">About Us</a>
       </nav>
 
+
+
+      <!-- Contact CTA (Right) -->
+      <a class="nav-link-cta" data-page="contact" href="#">Contact Us</a>
+      
       <!-- Mobile Menu Button -->
-      <button id="menuBtn" class="menu-btn" aria-label="Toggle navigation menu">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="menu-icon">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
+      <button id="menu-btn" class="menu-btn" aria-label="Toggle menu">
+        <i data-feather="menu"></i>
       </button>
     </div>
   </header>
+  
+  <!-- Mobile Menu (Hidden by default) -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a class="nav-link" data-page="home" href="#">Home</a>
+    <a class="nav-link" data-page="erp" href="#">ERP Modules</a>
+    <a class="nav-link" data-page="visibility" href="#">Visibility</a>
+    <a class="nav-link" data-page="about" href="#">About Us</a>
+    <a class="nav-link" data-page="features" href="#">Features</a>
+    <a class="nav-link-cta" data-page="contact" href="#">Contact Us</a>
+  </div>
 
-  <!-- Main Content Wrapper -->
-  <main class="main-content">
+  <!-- MAIN CONTENT AREA: All pages are here -->
+  <main class="main" id="main">
 
-    <!-- ======================== -->
-    <!-- HOME PAGE CONTENT        -->
-    <!-- ======================== -->
-    <div id="page-home" class="page active">
-      <!-- HERO -->
-      <section class="hero">
+    <!-- ================= 1. HOME PAGE (Default Active) ================= -->
+    <section id="home" class="page active">
+      
+      <!-- Home: Hero Section -->
+      <div class="hero-section">
         <div class="container hero-grid">
-          <!-- Hero Content -->
           <div class="hero-content fade-in">
-            <h1>
-              The Hybrid Platform for 
-              <span class="hero-highlight">ERP & Learning Transparency</span>
+            <!-- UPDATED from PDF -->
+            <div class="eyebrow">The Hybrid Platform for - ERP & Learning Transparency</div>
+            <h1 class="hero-title">
+              India's First Hybrid <span class="accent">School ERP</span> + <span class="accent">Learning Visibility</span> Platform
             </h1>
-            <p class="hero-desc">
-              India’s first upcoming hybrid School ERP + Learning Visibility Platform, bridging the gap between school operations and real student effort.
+            <!-- UPDATED from PDF -->
+            <p class="hero-sub">
+              Bridging the gap between school operations and real student effort. It provides Learning Visibility and Transparency —a deep, predictive understanding of student effort and performance—seamlessly integrated with best-in-class ERP functionality.
             </p>
-            <div class="hero-buttons">
-              <a href="#erp" class="btn btn-primary">Explore Our ERP</a>
-              <a href="#usp" class="btn btn-secondary">Discover Our USP</a>
+            <div class="hero-ctas">
+              <a data-page="erp" href="#" class="btn primary">Explore Modules</a>
+              <a data-page="contact" href="#" class="btn ghost">Get in Touch</a>
             </div>
           </div>
-          <!-- Hero Image -->
-          <div class="hero-image-wrapper fade-in">
-            <img src="Dashboard.jpg" 
-                 alt="Parakk-ERP Dashboard Preview"
-                 class="hero-image"
-                 onerror="this.src='https:dashboard.jpg'">
-          </div>
-        </div>
-      </section>
-
-      <!-- FOUNDER SECTION -->
-      <section class="founder-section fade-in">
-        <div class="founder-card">
-          <img src="admin.jpg" 
-               alt="Founder Photo" 
-               class="founder-img"
-               onerror="this.src='https:admin.jpg'">
-          <div class="founder-info">
-            <h3>~ Om Mishra</h3>
-            <p>Founder of Parakk-ERP — A new era of educational transparency.</p>
+          <div class="hero-image-wrapper fade-in" data-delay="150">
+            
+            <!-- YAHAN APNI HERO IMAGE DAALEIN -->
+            <!-- Maine "images/" folder suggest kiya hai, aap path badal sakte hain -->
+            <img src="Dashboard.png" alt="Parakk Dashboard Preview" class="hero-main-image">
+            
+            <!-- Decorative elements -->
+            <div class="deco dash-1"></div>
+            <div class="deco dot-1"></div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- ABOUT -->
-      <section id="about" class="content-section fade-in">
-        <div class="content-card">
-          <h2 class="section-title">About Parakk-ERP</h2>
-          <p class="section-subtitle">
-            Parakk-ERP is an Platform that connects Schools, Teachers, Parents, and Students transparently. It's a next-generation hybrid solution designed to bridge the gap between classroom performance and real student effort, making education measurable and truly student-centered.  Parakk-ERP's core philosophy is complete transparency. Parakk-ERP goes beyond tradi onal school management 
-systems by combining ERP efficiency with real-me learning visibility. While most ERPs focus only on administra ve 
-control, Parakk-ERP measures what truly ma ers — the student’s self-study effort and academic consistency. By 
-connec ng classroom data with home study insights, it builds complete transparency between schools, teachers, and 
-parents. This unique bridge empowers educators to make informed decisions, helps parents track genuine learning, 
-and mo vates students through measurable progress — making Parakk-ERP not just a management tool, but a 
-complete ecosystem for visible educa on growth. 
-          </p>
-        </div>
-      </section>
+      <!-- Home: Why Us (3-Card Section) -->
+      <div class="page-section soft-bg">
+        <div class="container">
+          <header class="section-head fade-in">
+            <span class="eyebrow-center">Why Parakk-ERP?</span>
+            <h2>The Reason- Focus on Transformation</h2>
+          </header>
 
-      <!-- ERP SECTION -->
-      <section id="erp" class="content-section fade-in">
-        <div class="content-card">
-          <h2 class="section-title">What Our ERP Delivers</h2>
-          <p class="section-subtitle">
-            Our robust ERP module streamlines all academic operations, converting routine data into actionable insights for parents and faculty.
-          </p>
-          <div class="grid-3">
-            <!-- Card 1 -->
-            <div class="info-card">
-              <h3 class="info-card-title"><span class="info-card-icon">📚</span> Live Attendance</h3>
-              <p>Instant synchronization between classroom attendance and the parent dashboard.</p>
+          <div class="card-grid">
+            <div class="feature-card fade-in">
+              <div class="card-icon blue"><i data-feather="eye"></i></div>
+              <h3>01. Clarity (AI Scrutiny)</h3>
+              <!-- UPDATED from PDF -->
+              <p>AI Learning Scrutiny: Discover how students learn, not just what they score. Our AI maps effort, engagement, and self-study patterns, providing unprecedented insight into academic trajectory.</p>
             </div>
-            <!-- Card 2 -->
-            <div class="info-card">
-              <h3 class="info-card-title"><span class="info-card-icon">🧾</span> Fee Management</h3>
-              <p>Complete transparency in all transactions, due dates, and digital receipts, accessible 24/7.</p>
+            
+            <div class="feature-card fade-in" data-delay="150">
+               <div class="card-icon green"><i data-feather="cpu"></i></div>
+              <h3>02. Efficiency (Automation)</h3>
+              <!-- UPDATED from PDF -->
+              <p>Full-Stack ERP Automation: Automate complex processes—from fee collection and attendance to HR management. Reduce administrative overhead by up to 40% and free teachers to focus purely on teaching.</p>
             </div>
-            <!-- Card 3 -->
-            <div class="info-card">
-              <h3 class="info-card-title"><span class="info-card-icon">📢</span> Instant Communication</h3>
-              <p>School circulars, notices, and important updates reach both students and parents in real-time.</p>
+            
+            <div class="feature-card fade-in" data-delay="300">
+               <div class="card-icon orange"><i data-feather="trending-up"></i></div>
+              <h3>03. Growth (Prediction)</h3>
+              <!-- UPDATED from PDF -->
+              <p>Predictive Intervention: Identify students at risk weeks in advance using machine learning. Shift from remedial action to proactive guidance, ensuring every student reaches their full potential.</p>
             </div>
           </div>
-         
+        </div>
+      </div>
+      
+      <!-- Home: Call to Action for Visibility -->
+      <div class="page-section cta-section">
+        <div class="container text-center fade-in">
+          <h2>See the Unseen: Experience Learning Visibility</h2>
+          <p class="section-sub">Parakk is not just an ERP, it's a revolutionary way to understand student effort.</p>
+          <a data-page="visibility" href="#" class="btn primary btn-large">Explore Visibility Features</a>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- ================= 2. ERP MODULES PAGE ================= -->
+    <section id="erp" class="page hidden">
+      <div class="page-section">
+        <div class="container">
+          <header class="section-head fade-in">
+            <span class="eyebrow-center">The Engine</span>
+            <!-- UPDATED from PDF -->
+            <h2>ERP Modules: The Engine of Administrative Excellence</h2>
+            <p class="section-sub">Streamline every function—from finance and human resources to communication and student records—with a single, unified platform with transparency of parents. Our Enterprise Resource Planning (ERP) system is the central nervous system of our school's operations, integrating every function into a single, unified platform. It eliminates manual data entry and disparate systems by automating key processes from admissions to alumni relations. This provides real-time access to accurate data, enabling administrators to make informed, strategic decisions quickly. The system significantly enhances efficiency and communication across students, parents, and staff, leading to a more productive and transparent environment. Ultimately, our ERP empowers us to optimize resources, reduce operational costs, and focus more energy on delivering an exceptional educational experience.</p>
+          </header>
+
+          <!-- Section 1: Smart Fee (Text Left, Image Right) -->
+          <div class="alternating-section">
+            <div class="content-block fade-in">
+              <span class="eyebrow">Financial Module</span>
+              <h3>Smart Fee & Finance Management</h3>
+              <!-- UPDATED from PDF -->
+              <p>Automate complex financial processes with our advanced fee system. From scheduled, customized challan generation to multi-mode online payments and predictive defaulter alerts, manage your school's finances with flawless clarity with complete transparency. </p>
+              <ul>
+                <!-- UPDATED from PDF -->
+                <li>Automated Invoicing: Scheduled, customized fee challan generation.</li>
+                <li>Multi-Mode Payments: Integrated gateway for all online payment methods (UPI, Card, Net Banking).</li>
+                <li>Predictive Defaulter Alerts: Automated notifications to parents/guardians, minimizing collection delays.</li>
+                <li>Unified Accounts Ledger: Real-time financial reports and statement generation.</li>
+              </ul>
+              <a href="#" class="learn-more">Learn More <i data-feather="arrow-right"></i></a>
+            </div>
+            <div class="image-wrapper fade-in" data-delay="150">
+              <!-- YAHAN FINANCE MODULE KI IMAGE DAALEIN -->
+              <img src="ERP.png" alt="Finance & Fee Module" class="section-image">
+              <div class="deco dash-2"></div>
+            </div>
+          </div>
           
-
-        </div>
-      </section>
-
-      <!-- USP SECTION -->
-      <section id="usp" class="content-section fade-in">
-        <div class="content-card card-highlight">
-          <h2 class="section-title">Our Unique Selling Points (USP)</h2>
-          <p class="section-subtitle">
-            Parakk-ERP adds the missing layer in education: true self-study visibility. We connect ERP data with measurable student effort.
-          </p>
-          <div class="grid-3">
-            <!-- Card 1 -->
-            <div class="info-card">
-              <h3 class="info-card-title"><span class="info-card-icon">🔗</span> Connected Ecosystem</h3>
-              <p>A single, unified platform that bridges students, parents, and teachers through shared, transparent data.</p>
+          <!-- Section 2: Attendance (Image Left, Text Right) -->
+          <div class="alternating-section reverse soft-bg-section">
+            <div class="image-wrapper fade-in">
+              <!-- YAHAN ATTENDANCE MODULE KI IMAGE DAALEIN -->
+              <img src="Attendance.png" alt="Attendance System" class="section-image">
+              <div class="deco dot-2"></div>
             </div>
-            <!-- Card 2 -->
-            <div class="info-card">
-              <h3 class="info-card-title"><span class="info-card-icon">📈</span> Learning Visibility</h3>
-              <p>The first platform to show measurable self-study hours, broken down by subject, for real effort tracking.</p>
-            </div>
-            <!-- Card 3 -->
-            <div class="info-card">
-              <h3 class="info-card-title"><span class="info-card-icon">🎯</span> Gamified Motivation</h3>
-              <p>Encourages academic consistency and discipline using streaks, badges, and progress rewards.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FEATURES -->
-      <section id="features" class="content-section fade-in">
-        <div class="content-card">
-          <h2 class="section-title">Core Platform Features</h2>
-          <div class="grid-2">
-            <!-- Student & Parent App -->
-            <div class="feature-card">
-              <h3><span class="feature-icon">👨‍🎓</span> Student & Parent App</h3>
-              <ul class="feature-list">
-                <li><strong class="feature-strong">Smart Study Timer:</strong> Logs focused study time per subject.</li>
-                <li><strong class="feature-strong">Daily Study Proof:</strong> Simple upload to verify session completion.</li>
-                <li><strong class="feature-strong">Weekly Report Cards:</strong> Automated reports on study consistency.</li>
-                <li><strong class="feature-strong">Parental Alerts:</strong> Real-time notifications for study logs and school notices.</li>
+             <div class="content-block fade-in" data-delay="150">
+              <span class="eyebrow">Operations Module</span>
+              <h3>Live Attendance & Safety Tracking</h3>
+              <!-- UPDATED from PDF -->
+              <p>A comprehensive system for precision and safety. Supports Biometric, QR Code, and manual entry, all synchronized in real-time with instant absentee alerts to parents.</p>
+              <ul>
+                <!-- UPDATED from PDF -->
+                <li>Instant Absentee Alerts: Automated SMS/App notifications upon absence.</li>
+                <li>Flexible Capture: Supports Biometric, QR Code, and manual entry.</li>
+                <li>Historical Tracking: Comprehensive, accurate attendance history and reports for compliance.</li>
               </ul>
+              <a href="#" class="learn-more">Learn More <i data-feather="arrow-right"></i></a>
             </div>
-            <!-- Teacher & School Dashboard -->
-            <div class="feature-card">
-              <h3><span class="feature-icon">🧑‍🏫</span> Teacher & School Dashboard</h3>
-              <ul class="feature-list">
-                <li><strong class="feature-strong">Performance Dashboard:</strong> At-a-glance view of class-wide study habits.</li>
-                <li><strong class="feature-strong">Class-Wise Study Summary:</strong> Identify which subjects are being studied.</li>
-                <li><strong class="feature-strong">Behavior Tracking:</strong> Correlate study effort with attendance.</li>
-                <li><strong class="feature-strong">Automated Report Generation:</strong> Save hours on administrative tasks.</li>
+          </div>
+          
+          <!-- Section 3: Communication (Text Left, Image Right) -->
+          <div class="alternating-section">
+            <div class="content-block fade-in">
+              <span class="eyebrow">Management Tools</span>
+              <!-- UPDATED from PDF -->
+              <h3>Seamless Communication Hub</h3>
+              <p>Bridge the gap between all stakeholders with secure, private chat, an emergency broadcast system for school-wide alerts, and a digital notice board for announcements.</p>
+              <ul>
+                <!-- UPDATED from PDF -->
+                <li>Secure Parent-Teacher Chat: Private, logged, and traceable communication.</li>
+                <li>Emergency Broadcast System: Instantaneous school-wide alerts (SMS/App/Email).</li>
+                <li>Digital Notice Board: Class-wise and school-level announcements.</li>
               </ul>
+              <a href="#" class="learn-more">Learn More <i data-feather="arrow-right"></i></a>
+            </div>
+            <div class="image-wrapper fade-in" data-delay="150">
+              <!-- YAHAN COMMUNICATION MODULE KI IMAGE DAALEIN -->
+              <img src="Communication.png" alt="Communication Hub" class="section-image">
+              <div class="deco dash-3"></div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
 
-    <!-- ======================== -->
-    <!-- PRICING PAGE CONTENT     -->
-    <!-- ======================== -->
-    <div id="page-pricing" class="page">
-      <section class="content-section fade-in">
-        <div class="content-card">
-          <h2 class="section-title">Simple, Transparent Pricing</h2>
-          <p class="section-subtitle">
-            We appreciate your interest in our services. Our pricing section is currently under maintenance as we work to update and enhance our packages for the best possible value. We are committed to providing you with the most accurate and up-to-date information. But at this time this is under-maintinance.
-          </p>
+          <!-- ADDED Section 4: Library (Image Left, Text Right) - Based on PDF -->
+          <div class="alternating-section reverse soft-bg-section">
+            <div class="image-wrapper fade-in">
+              <!-- YAHAN LIBRARY MODULE KI IMAGE DAALEIN -->
+              <img src="Library.png" alt="Library Management" class="section-image">
+              <div class="deco dot-2"></div>
+            </div>
+             <div class="content-block fade-in" data-delay="150">
+              <span class="eyebrow">Resource Module</span>
+              <h3>Library & Asset Manager</h3>
+              <p>Effortlessly manage all physical and digital resources, from digital cataloging to automated issue/return via student Digital ID and real-time stock alerts.</p>
+              <ul>
+                <li>Digital Cataloging: Effortless management of physical and digital resources.</li>
+                <li>Automated Issue/Return: Quick transactions via student Digital ID.</li>
+                <li>Stock & Inventory Alerts: Real-time tracking of asset depreciation and stock levels.</li>
+              </ul>
+              <a href="#" class="learn-more">Learn More <i data-feather="arrow-right"></i></a>
             </div>
           </div>
+          
+          <!-- ADDED Section 5: Examination (Text Left, Image Right) - Based on PDF -->
+          <div class="alternating-section">
+            <div class="content-block fade-in">
+              <span class="eyebrow">Academics Module</span>
+              <h3>Dynamic Examination Module</h3>
+              <p>Handle all assessments with one tool. Supports flexible scheduling, online/offline grading inputs, and automated generation of customizable report cards.</p>
+              <ul>
+                <li>Flexible Scheduling: Easy creation of internal and board exam timetables.</li>
+                <li>Online/Offline Assessment: Support for both digital and traditional grading inputs.</li>
+                <li>Report Card Generation: Automated, customizable, and ready-to-print report cards.</li>
+              </ul>
+              <a href="#" class="learn-more">Learn More <i data-feather="arrow-right"></i></a>
+            </div>
+            <div class="image-wrapper fade-in" data-delay="150">
+              <!-- YAHAN EXAM MODULE KI IMAGE DAALEIN -->
+              <img src="Examination.png" alt="Examination Module" class="section-image">
+              <div class="deco dash-3"></div>
+            </div>
+          </div>
+
         </div>
-      </section>
-    </div>
-
-
-    <!-- ======================== -->
-    <!-- CONTACT PAGE CONTENT     -->
-    <!-- ======================== -->
-
-
-    <div id="page-contact" class="page">
-      <section class="content-section fade-in">
-        <div class="content-card">
-          <h2 class="section-title">Get in Touch</h2>
-          <p class="section-subtitle">
-            Interested in a demo, pilot program, or collaboration? We'd love to hear from you.
-          </p>
+      </div>
+      <div class="page-section cta-section soft-bg">
+        <div class="container text-center fade-in">
+          <h2>Ready to Automate Your School?</h2>
+          <!-- UPDATED from PDF (removed demo) -->
+          <p class="section-sub">See all our modules in action. Get in touch with our team today.</p>
+          <a data-page="contact" href="#" class="btn primary btn-large">Contact Us</a>
         </div>
+      </div>
+    </section>
 
-                <!-- Contact Grid -->
-        <div class="contact-grid">
 
-          <!-- V-Card Style Contact Info -->
-          <div class="vcard">
-            <div class="vcard-header">
-              <img src="parakk.png" 
-                   alt="Parakk-ERP Logo" 
-                   class="vcard-logo"
-                   onerror="this.src='https://placehold.co/48x48/0f172a/ffffff?text=P'">
-              <div>
-                <h3>Parakk-ERP</h3>
-                <p>Educational Transparency</p>
+    <!-- ================= 2. OUR FEATURES PAGE (NEW) ================= -->
+    <!-- ================= 2. OUR FEATURES PAGE (UNIFIED VIEW) ================= -->
+    <!-- This section showcases all key features in a single, comprehensive view. -->
+    <section id="features" class="page hidden">
+        <div class="page-section">
+            <div class="container">
+                <header class="section-head fade-in">
+                    <span class="eyebrow-center">Parakk-ERP: The Unified Platform</span>
+                    <h2>Comprehensive Features: Visibility, ERP & Communication</h2>
+                    <p class="section-sub">Parakk is a single, intelligent platform that brings together school administration, pedagogy, and communication, providing immense value to every stakeholder.</p>
+                </header>
+    
+                <!-- Custom Grid layout for 8 feature cards (responsive layout is handled in style.css) -->
+                <div class="card-grid unified-features-grid">
+                    
+                    <!-- --- Category 1: LEARNING VISIBILITY & INSIGHTS --- -->
+                    <div class="feature-card fade-in" style="text-align: left;">
+                        <div class="card-icon blue"><i data-feather="eye"></i></div>
+                        <h3>AI Learning Scrutiny (Deep Insight)</h3>
+                        <p>Deep, predictive analysis of student effort and engagement patterns. Understand **how** students learn, not just **what** they score.</p>
+                    </div>
+                    
+                    <div class="feature-card fade-in" data-delay="100" style="text-align: left;">
+                       <div class="card-icon green"><i data-feather="trending-up"></i></div>
+                      <h3>Predictive Intervention</h3>
+                      <p>Use machine learning to identify at-risk students weeks in advance. Shift from remedial action to proactive guidance to maximize potential.</p>
+                    </div>
+                    
+                    <div class="feature-card fade-in" data-delay="200" style="text-align: left;">
+                       <div class="card-icon orange"><i data-feather="clock"></i></div>
+                      <h3>Self-Study Tracking</h3>
+                      <p>Track and verify student self-study time outside of school hours, providing measurable data on commitment and accountability.</p>
+                    </div>
+
+                    <!-- --- Category 2: ERP & ADMINISTRATIVE EFFICIENCY --- -->
+                    <div class="feature-card fade-in" data-delay="300" style="text-align: left;">
+                       <div class="card-icon red"><i data-feather="cpu"></i></div>
+                      <h3>Full ERP Automation</h3>
+                      <p>Automate complex processes like Fee collection, Live Attendance, HR management, and Asset Management to reduce administrative workload by up to 40%.</p>
+                    </div>
+
+                    <div class="feature-card fade-in" data-delay="400" style="text-align: left;">
+                       <div class="card-icon blue-dark" style="background: var(--accent-primary);"><i data-feather="edit-3"></i></div>
+                      <h3>Dynamic Examination Module</h3>
+                      <p>Simplify exam scheduling, grading input, and the automated, customizable generation of professional report cards.</p>
+                    </div>
+                    
+                    <div class="feature-card fade-in" data-delay="500" style="text-align: left;">
+                       <div class="card-icon green-dark" style="background: var(--color-green);"><i data-feather="book-open"></i></div>
+                      <h3>Library & Asset Manager</h3>
+                      <p>Efficiently manage all physical and digital resources with digital cataloging and quick issue/return functionality using Student Digital IDs.</p>
+                    </div>
+                    
+                    <!-- --- Category 3: COMMUNICATION & STUDENT TOOLS --- -->
+                    <div class="feature-card fade-in" data-delay="600" style="text-align: left;">
+                       <div class="card-icon orange-dark" style="background: var(--color-orange);"><i data-feather="message-square"></i></div>
+                      <h3>Secure Parent-Teacher Chat</h3>
+                      <p>A secure, private, and traceable communication platform to foster direct, focused discussions on student growth between parents and educators.</p>
+                    </div>
+
+                    <div class="feature-card fade-in" data-delay="700" style="text-align: left;">
+                       <div class="card-icon red-dark" style="background: #ef4444; /* Custom Red */"><i data-feather="calendar"></i></div>
+                      <h3>Digital Timetable & Tasks</h3>
+                      <p>Real-time access for students to class schedules, assignment submissions, and instant notifications for homework deadlines.</p>
+                    </div>
+
+                    <div class="feature-card fade-in" data-delay="700" style="text-align: left;">
+                    <div class="card-icon red-dark" style="background: #b67b7b; /* Custom Red */"><i data-feather="calendar"></i></div>
+                    <h3>And Many others !</h3>
+                    <p>there are so many features like these. Thanks for visiting our features !!</p>
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+        
+        <!-- Call to Action Section for Features Page -->
+        <div class="page-section cta-section">
+            <div class="container text-center fade-in">
+              <h2>Ready to see the combined power?</h2>
+              <p class="section-sub">Get in touch with our team to discuss your school's specific needs.</p>
+              <a data-page="contact" href="#" class="btn primary btn-large">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ================= 3. VISIBILITY PAGE ================= -->
+    <section id="visibility" class="page hidden">
+       <div class="page-section">
+        <div class="container">
+          <header class="section-head fade-in">
+            <span class="eyebrow-center">The Innovation</span>
+            <!-- UPDATED from PDF -->
+            <h2>Unlocking the Black Box of Learning: The Parakk Scrutiny Advantage</h2>
+            <!-- UPDATED from PDF -->
+            <p class="section-sub">Parakk-ERP's core philosophy is complete transparency. It goes beyond traditional systems by combining ERP efficiency with real-time learning visibility. By connecting classroom data with home study insights, it builds complete transparency between schools, teachers, and parents.</p>
+          </header>
+
+          <!-- Section 1: Self-Study Tracking (Image Left, Text Right) -->
+          <div class="alternating-section reverse">
+            <div class="image-wrapper fade-in">
+              <!-- YAHAN SELF-STUDY IMAGE DAALEIN -->
+              <img src="self-study.png" alt="Self-Study Timer" class="section-image">
+              <div class="deco dot-3"></div>
+            </div>
+             <div class="content-block fade-in" data-delay="150">
+              <span class="eyebrow">Core Feature 01</span>
+              <!-- UPDATED from PDF -->
+              <h3>Self-Study Tracking</h3>
+              <p>Tracks every student's real study effort beyond school hours. Uses smart timers and logs to record subject-wise self-study sessions, giving teachers and parents measurable insights."Monitor and motivate student self-learning journeys with detailed tracking of time spent on resources, progress through modules, and quiz performance. Empower students to take ownership of their academic growth."</p>
+              <!-- Removed list and link to match PDF's simpler content block -->
+            </div>
+          </div>
+        
+          <!-- Section 2: Parent Dashboard (Text Left, Image Right) -->
+          <div class="alternating-section soft-bg-section">
+            <div class="content-block fade-in">
+              <span class="eyebrow">Core Feature 02</span>
+              <!-- UPDATED from PDF -->
+              <h3>Transparent Parent Dashboard</h3>
+              <p>Turns invisible learning into visible data for parents. Automatically syncs student study hours, attendance, and performance into a clean, real-time parent view."Provide parents with real-time, comprehensive insights into their child's academic performance, attendance, and behavioral trends. Foster a collaborative environment between home and school with unparalleled visibility."</p>
+              <!-- Removed list and link -->
+            </div>
+            <div class="image-wrapper fade-in" data-delay="150">
+              <!-- YAHAN PARENT DASHBOARD KI IMAGE DAALEIN -->
+              <img src="V.dashboard.png" alt="Parent Dashboard" class="section-image">
+              <div class="deco dash-4"></div>
+            </div>
+          </div>
+
+           <!-- Section 3: Analytics (Image Left, Text Right) -->
+          <div class="alternating-section reverse">
+            <div class="image-wrapper fade-in">
+              <!-- YAHAN ANALYTICS KI IMAGE DAALEIN -->
+              <img src="V.analytics.png" alt="Learning Analytics" class="section-image">
+              <div class="deco dot-4"></div>
+            </div>
+             <div class="content-block fade-in" data-delay="150">
+              <span class="eyebrow">Core Feature 03</span>
+              <!-- UPDATED from PDF -->
+              <h3>Integrated ERP + Learning Analytics</h3>
+              <p>Merges academic data with behavior and effort analytics. Connects ERP attendance, fees, and grades with study performance to give a 360° learning profile."Unify core school operations with intelligent learning analytics to streamline administration and enhance educational outcomes. Gain a holistic view of institutional efficiency and individual student success."</p>
+              <!-- Removed list and link -->
+            </div>
+          </div>
+          
+        </div>
+      </div>
+       <div class="page-section cta-section soft-bg">
+        <div class="container text-center fade-in">
+          <h2>Transform Learning from Intuition to Science</h2>
+          <p class="section-sub">The future of education is measurable and visible. Let us show you how.</p>
+          <!-- This CTA is fine, "whitepaper" is not "demo" -->
+          <a data-page="contact" href="#" class="btn primary btn-large">Get the Full Whitepaper</a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ================= 4. ABOUT US PAGE ================= -->
+    <section id="about" class="page hidden">
+      <div class="page-section">
+        <div class="container">
+          <header class="section-head fade-in">
+            <span class="eyebrow-center">Our Story</span>
+            <!-- UPDATED from PDF -->
+            <h2>Founded on the Principle of Visibility</h2>
+            <!-- UPDATED from PDF -->
+            <p class="section-sub">Parakk-ERP is an upcoming Platform that connects Schools, Teachers, Parents, and Students transparently. It's a next-generation hybrid solution designed to bridge the gap between classroom performance and real student effort.</p>
+          </header>
+          
+          <div class="about-grid">
+            <div class="about-content fade-in">
+              <h3>The Problem We Solve</h3>
+              <!-- UPDATED from PDF -->
+              <p>Parakk-ERP was born from the collective vision of frustrated and tensed parents who recognized that the digital tools supporting schools were fundamentally flawed—they managed logistics but ignored pedagogy. In 2025, we decided to build the solution from the ground up: an ERP where the database is not just for records, but for **learning optimization**.</p>
+              
+              <!-- UPDATED from PDF -->
+              <p>We were driven by the belief that every student deserves precise, proactive support, and every teacher deserves the clearest possible view into their students' academic journey. Parakk-ERP is the realization of that belief, dedicated to advancing educational outcomes through data science.</p>
+              
+              <div class="mission-vision">
+                <div class="mission">
+                  <h4><i data-feather="target" class="icon-small"></i> Mission</h4>
+                  <!-- UPDATED from PDF -->
+                  <p>To empower educational institutions with a unified, ERP platform that maximizes administrative efficiency and provides deep, actionable insights for personalized student success.</p>
+                </div>
+                <div class="vision">
+                  <h4><i data-feather="zap" class="icon-small"></i> Vision</h4>
+                  <!-- UPDATED from PDF -->
+                  <p>To redefine the future of education by making Learning Visibility the universal standard, enabling institutions to nurture potential with precision, foresight, and unparalleled clarity.</p>
+                </div>
               </div>
             </div>
             
-            <div class="vcard-divider"></div>
-            
-            <div class="vcard-body">
-              <!-- Email -->
-              <a href="mailto:parakkerp@gmail.com" class="vcard-item-group">
-                <div class="vcard-icon-wrapper icon-email">
-                  <svg class="vcard-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
+            <div class="founder-card fade-in" data-delay="150">
+              <!-- YAHAN FOUNDER KI PHOTO DAALEIN -->
+              <img src="admin.jpg" alt="Om Mishra" class="founder-img">
+              <h4>~ Om Mishra</h4>
+              <p class="muted">Founder of Parakk-ERP</p>
+              <p>A new era of Educational Transparency.</p>
+              <div class="social-links">
+                <a href="#"><i data-feather="instagram" class="icon-social"></i></a>
+                <a href="https://www.linkedin.com/in/om-mishra-446578390?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BCZdao0LETN%2Bq58KOc8wEgw%3D%3D"><i data-feather="linkedin" class="icon-social"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="page-section cta-section soft-bg">
+        <div class="container text-center fade-in">
+          <h2>Join Us in Redefining Education</h2>
+          <p class="section-sub">We are constantly seeking innovators and partners. Talk to our leadership team.</p>
+          <a data-page="contact" href="#" class="btn primary btn-large">Connect with the Founder</a>
+        </div>
+      </div>
+    </section>
+    
+
+
+
+    <!-- ================= 5. CONTACT PAGE ================= -->
+    <section id="contact" class="page hidden">
+      <!-- No changes needed for this page as per PDF -->
+      <div class="page-section">
+        <div class="container">
+          <header class="section-head fade-in">
+            <span class="eyebrow-center">Contact</span>
+            <h2>Get in Touch with Our Team</h2>
+            <p class="section-sub">We respond to all technical, sales, and partnership inquiries within 24 hours.</p>
+          </header>
+
+          <div class="contact-grid">
+            <div class="contact-form-wrapper card fade-in">
+              <h3>Send Us a Message</h3>
+              <form id="contactForm" class="contact-form" action="#" method="post">
+                <div class="form-group">
+                  <label for="name">Full name / School Name</label>
+                  <input required id="name" name="name" type="text" placeholder="Your name or institution">
                 </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input required id="email" name="email" type="email" placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone (Optional)</label>
+                  <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" placeholder="Tell us about your requirements..."></textarea>
+                </div>
+                <button class="btn primary full-width" type="submit">Send Inquiry</button>
+              </form>
+            </div>
+            <div class="contact-info fade-in" data-delay="150">
+              <h3>Direct Information</h3>
+              <p>For urgent inquiries, please use the direct channels below.</p>
+              <div class="info-item">
+                <i data-feather="mail"></i>
                 <div>
-                  <h4>Email</h4>
-                  <p class="vcard-link">parakkerp@gmail.com</p>
+                  <strong>Email</strong>
+                  <a href="mailto:parakkerp@gmail.com">parakkerp@gmail.com</a>
                 </div>
-              </a>
-              <!-- WhatsApp -->
-              <a href="https://wa.me/919424526998" target="_blank" rel="noopener noreferrer" class="vcard-item-group">
-                <div class="vcard-icon-wrapper icon-whatsapp">
-                  <svg class="vcard-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>
-                </div>
+              </div>
+               <div class="info-item">
+                <i data-feather="phone"></i>
                 <div>
-                  <h4>WhatsApp</h4>
-                  <p class="vcard-link">+91 94245 26998</p>
+                  <strong>Phone</strong>
+                  <a href="tel:+919424526998">+91 94245 26998</a>
                 </div>
-              </a>
-              <!-- Address -->
-              <div class="vcard-item-group non-link">
-                <div class="vcard-icon-wrapper icon-address">
-                  <svg class="vcard-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
-                </div>
+              </div>
+               <div class="info-item">
+                <i data-feather="map-pin"></i>
                 <div>
-                  <h4>Address</h4>
-                  <p>Satna, Madhya Pradesh, India</p>
+                  <strong>Headquarters</strong>
+                  <span>Satna, Madhya Pradesh, India</span>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Contact Form -->
-          <div class="contact-form-wrapper">
-            <h3>Send us a message</h3>
-            <form id="contactForm" class="contact-form">
-              <div>
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="XYD" required>
-              </div>
-              <div>
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="you@example.com" required>
-              </div>
-              <div>
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="I'm interested in a demo for my school..."></textarea>
-              </div>
-              <div>
-                <button type="submit" class="btn btn-primary w-full">
-                  Send Message
-                </button>
-              </div>
-            </form>
-          </div>
-
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-logo">
-      <img src="parakk.png" 
-           alt="Parakk-ERP Logo" 
-           class="logo-img-footer"
-           onerror="this.src='https:parakk.png'">
-      <div class="footer-logo-text">Parakk-ERP</div>
+  <!-- FOOTER (unikk-e style, black) -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      
+      <!-- Column 1: Brand -->
+      <div class="footer-col">
+        <a class="brand" href="#" data-page="home" aria-label="Parakk home"></a>
+          <!-- Footer Logo -->
+          <img src="parakk.png" alt="Parakk-ERP Logo" class="footer-logo-img">
+          <span class="brand-text-light">Parakk-ERP</span>
+        </a>
+        <p class="footer-sub">"Parakk-ERP: Where School Management Meets Student Success and Parents Transparency."</p>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-title">Product</h4>
+        <a class="footer-link" data-page="erp" href="#">ERP Modules</a>
+        <a class="footer-link" data-page="visibility" href="#">Visibility Platform</a>
+        <!-- UPDATED (removed demo) -->
+        <a class="footer-link" data-page="contact" href="#">Get in Touch</a>
+      </div>
+      
+      <!-- Column 3: Company -->
+      <div class="footer-col">
+        <h4 class="footer-title">Company</h4>
+        <a class="footer-link" data-page="home" href="#">Why Parakk?</a>
+        <a class="footer-link" data-page="about" href="#">About Us</a>
+        <a class="footer-link" data-page="contact" href="#">Contact</a>
+      </div>
+      
     </div>
-    <small class="footer-quote">
-      “Where schools manage operations, Parakk-ERP measures learning and delivers transparency to Parents, Teachers, and Students.”
-    </small>
-    <p class="copyright">| Parakk-ERP |</p>
+    <div class="container footer-bottom">
+      <p><span id="year"></span>| Parakk-ERP |</p>
+    </div>
   </footer>
 
-  <!-- JavaScript File -->
-  <script src="script.js"></script>
+  <!-- Scroll to Top Button -->
+  <a href="#main" class="scroll-to-top" id="scrollTopBtn" aria-label="Scroll to top of page">
+    <i data-feather="arrow-up"></i>
+  </a>
+
+  <!-- Inline JavaScript for Navigation and Animations -->
+  <!-- No changes made to JS to preserve functionality -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      
+      // Initialize Feather Icons
+      feather.replace();
+
+      // Set Footer Year
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      const pages = document.querySelectorAll('.page');
+      const navLinks = document.querySelectorAll('[data-page]');
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mainElement = document.getElementById("main");
+
+      // --- 1. Page Navigation Logic ---
+      function showPage(targetId) {
+        pages.forEach(p => {
+          if (p.id === targetId) {
+            p.classList.add('active');
+            p.classList.remove('hidden');
+          } else {
+            p.classList.remove('active');
+            p.classList.add('hidden');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.dataset.page === targetId) {
+            link.classList.add('active');
+          }
+        });
+        
+        // Scroll to the top of the main content area smoothly
+        mainElement.scrollIntoView({ behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        // Close mobile menu if open
+        if (mobileMenu.style.display === "flex") {
+          mobileMenu.style.display = "none";
+        }
+      }
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          showPage(link.dataset.page);
+        });
+      });
+      
+      // Default load: show home page
+      showPage('home'); 
+
+      // --- 2. Mobile Menu Toggle ---
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.style.display = mobileMenu.style.display === "flex" ? "none" : "flex";
+        });
+      }
+
+      // --- 3. Scroll to Top Button ---
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+      if (scrollTopBtn) {
+        window.addEventListener("scroll", () => {
+          if (window.pageYOffset > 300) {
+            scrollTopBtn.classList.add("visible");
+          } else {
+            scrollTopBtn.classList.remove("visible");
+          }
+        });
+      }
+
+      // --- 4. Fade-in on Scroll (Intersection Observer) ---
+      const fadeInElements = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          // Only observe elements on the currently active page
+          const activePage = document.querySelector('.page.active');
+          if (entry.isIntersecting && activePage && activePage.contains(entry.target)) {
+            const delay = parseInt(entry.target.dataset.delay) || 0;
+            
+            setTimeout(() => {
+              entry.target.classList.add('visible');
+            }, delay);
+            
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 }); 
+
+      // Initial observation
+      fadeInElements.forEach(el => {
+        observer.observe(el);
+      });
+      
+      // Re-observe when page changes (to trigger animation on new page load)
+      navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            // Re-observe all elements when a new page is shown
+            fadeInElements.forEach(el => {
+                el.classList.remove('visible'); // Reset visibility
+                observer.observe(el);
+            });
+          });
+      });
+
+
+      // --- 5. Contact Form Mailto Logic (Using mailto for submission) ---
+      const form = document.getElementById("contactForm");
+      if (form) {
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          try {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const msg = document.getElementById("message").value;
+            
+            const toEmail = "parakkerp@gmail.com"; 
+            
+            const body = `Name/School: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${msg}`;
+            const mailtoLink = `mailto:${toEmail}?subject=${encodeURIComponent("Inquiry from " + name)}&body=${encodeURIComponent(body)}`;
+            
+            window.location.href = mailtoLink;
+            
+            setTimeout(() => {
+                form.reset();
+            }, 1000);
+            
+          } catch (error) {
+            console.error("Failed to process form:", error);
+            // In a real app, use a custom modal for error messages
+          }
+        });
+      }
+    });
+  </script>
 </body>
 </html>
 
