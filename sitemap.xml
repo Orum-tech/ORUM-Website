@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://parakk-erp.site/</loc>
-      <lastmod>2025-11-03</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>1.0</priority>
-   </url>
+
+<urlset xmlns="[sandigdh link hata diya gaya]">
+
+<!-- Homepage (Sabse Zaroori) -->
+<url>
+    <loc>https://parakk-erp.site/</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+</url>
+
+<!-- Baaki Pages (Sections) -->
+<url>
+    <loc>https://parakk-erp.site/#erp</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://parakk-erp.site/#visibility</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://parakk-erp.site/#features</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://parakk-erp.site/#about</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://parakk-erp.site/#contact</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+
 </urlset>
