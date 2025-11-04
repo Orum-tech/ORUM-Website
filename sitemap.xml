@@ -1,46 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<!-- Homepage (Sabse Zaroori) -->
-<url>
-    <loc>https://parakk-erp.site/</loc>
-    <lastmod>2025-11-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-</url>
+    <!-- Primary Homepage (Highest Priority) -->
+    <url>
+        <loc>https://parakk-erp.site/index.html</loc>
+        <lastmod>2025-11-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
 
-<!-- Baaki Pages (Sections) -->
-<url>
-    <loc>https://parakk-erp.site/#erp</loc>
-    <lastmod>2025-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://parakk-erp.site/#visibility</loc>
-    <lastmod>2025-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://parakk-erp.site/#features</loc>
-    <lastmod>2025-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://parakk-erp.site/#about</loc>
-    <lastmod>2025-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://parakk-erp.site/#contact</loc>
-    <lastmod>2025-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-</url>
-
+        <!-- Features Page -->
+    <url>
+        <loc>https://parakk-erp.site/features.html</loc>
+        <lastmod>2025-11-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    <!-- About Us Page -->
+    <url>
+        <loc>https://parakk-erp.site/about.html</loc>
+        <lastmod>2025-11-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Contact Page -->
+    <url>
+        <loc>https://parakk-erp.site/contact.html</loc>
+        <lastmod>2025-11-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- ERP Modules Page (Product) -->
+    <url>
+        <loc>https://parakk-erp.site/erp.html</loc>
+        <lastmod>2025-11-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Visibility Platform Page (Product) -->
+    <url>
+        <loc>https://parakk-erp.site/visibility.html</loc>
+        <lastmod>2025-11-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
 </urlset>
